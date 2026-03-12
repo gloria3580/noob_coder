@@ -1,9 +1,12 @@
 {
-  "functions": {
-    "api/*.php": { "runtime": "vercel-php@0.7.1" }
-  },
-  "routes": [
-    { "src": "/API/api.php", "dest": "/api/api.php" },
-    { "src": "/(.*)", "dest": "/api/api.php" }
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "https://v0-remotemanagementsystem-six.vercel.app/api/$1"
+        }
+    ]
+}
+p" }
   ]
 }

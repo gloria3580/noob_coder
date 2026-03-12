@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #1a1a1b; /* matched to screenshot body color */
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: #121212;
+    border-bottom: 2px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #e4e4e4;
+}
+
+.power-icon {
+    font-size: 22px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.power-icon:hover { color: #fff; }
+
+.device-header {
+    justify-content: center;
+    position: relative;
+}
+.device-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.back-btn {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.status-dot {
+    position: absolute;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.status-dot.online { background-color: #2ecc71; }
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.device-actions {
+    display: flex;
+    gap: 15px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.device-actions-full {
+    padding: 15px 20px 25px;
+}
+
+.gradient-btn {
+    flex: 1;
+    border: none;
+    padding: 14px 10px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #00d2ff, #7f00ff);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s, filter 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.fw-btn, .update-btn {
+    background: linear-gradient(90deg, #00c6ff, #8e44ad);
+}
+
+.telegram-btn {
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+}
+
+.cancel-btn {
+    background: linear-gradient(90deg, #00c6ff, #8e44ad);
+}
+
+.gradient-btn:active {
+    transform: scale(0.96);
+    filter: brightness(0.9);
+}
+
+.full-btn {
+    width: 100%;
+}
+
+/* Device info */
+.controlling-info {
+    text-align: center;
+    padding: 16px;
+    color: #ccc;
+    font-size: 14px;
+    background-color: #222;
+    border-bottom: 1px solid #333;
+}
+.controlling-info i { margin-right: 6px; }
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    color: #00d2ff;
+    margin: 5px 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Device List & Cards */
+.device-list, .sms-list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.device-card {
+    background-color: #232323;
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+}
+.device-card:active {
+    background-color: #2a2a2a;
+}
+
+.sms-card {
+    background-color: #232323;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.card-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.card-header h3 i { margin: 0 8px; font-size: 18px; color: #aaa; }
+.trash-icon {
+    color: #e74c3c;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card-body p i {
+    width: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+}
+
+.status {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.status.offline { color: #e74c3c !important; }
+.status.online { color: #2ecc71 !important; }
+.dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.status.offline .dot { background-color: #e74c3c; }
+.status.online .dot { background-color: #2ecc71; }
+
+
+.sms-card .sms-sender {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+.sms-card .sms-sender i {
+    color: #f1c40f;
+    font-size: 18px;
+}
+.sms-card .sms-body {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    white-space: pre-wrap;
+}
+.sms-card .sms-time {
+    color: #888;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-style: italic;
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.2s;
+    backdrop-filter: blur(2px);
+}
+.modal.show {
+    display: flex;
+}
+.modal-content {
+    background-color: #121212;
+    width: 90%;
+    max-width: 380px;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #333;
+    animation: slideUp 0.3s ease;
+}
+
+/* Specific SMS modal overrides */
+.sms-modal-content {
+    border: 2px solid #00d2ff;
+}
+.sms-modal-content h2 { text-align: center; }
+
+.modal h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Update Modal Inputs */
+.input-group input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00d2ff;
+    color: #fff;
+    padding: 10px 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.input-group input:focus {
+    border-bottom-color: #8e44ad;
+}
+
+/* SMS Modal Inputs */
+.sms-modal-content .input-group input, 
+.sms-modal-content .input-group textarea {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 1px solid #00d2ff;
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 14px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.sms-modal-content .input-group textarea {
+    resize: none;
+    min-height: 100px;
+    font-family: inherit;
+}
+.sms-modal-content .input-group input:focus, 
+.sms-modal-content .input-group textarea:focus {
+    border-color: #8e44ad;
+}
+
+.modal-actions, .modal-actions-full {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ccc;
+    font-size: 15px;
+    cursor: pointer;
+}
+.radio-group input[type="radio"] {
+    accent-color: #00d2ff;
+    width: 18px;
+    height: 18px;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { 
+    from { transform: translateY(30px); opacity: 0; } 
+    to { transform: translateY(0); opacity: 1; } 
+}

