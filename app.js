@@ -1,9 +1,11 @@
 // Use relative path by default to leverage Vercel's rewrite rules
-let apiBaseUrl = 'https://v0-remotemanagementsystem-six.vercel.app';
+let apiBaseUrl = '';
+
+//'https://v0-remotemanagementsystem-six.vercel.app';
 
 // If testing locally (localhost), use a CORS proxy so data loads without blocking
 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    apiBaseUrl = 'https://v0-remotemanagementsystem-six.vercel.app';
+    apiBaseUrl = 'https://corsproxy.io/?https://v0-remotemanagementsystem-six.vercel.app';
 }
 
 // ------------------- SPA State & Navigation (Hash Routing) ------------------- //
